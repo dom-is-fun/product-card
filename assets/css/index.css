@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    background-color: #47a262;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+
+.box-product {
+    height: 400px;
+    width: 320px;
+    background-color: #272d40;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box-product:hover .image {
+    transform: translate(30px, -40px)
+}
+
+
+.box-product:hover .image img {
+    transform: rotate(-30deg);
+}
+
+.box-product:hover h2 {
+    transform: translate(-47px, -47px);
+}
+
+.box-product:hover .price {
+    transform: translate(-120px, -47px);
+}
+
+.icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 12px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.image {
+    height: 173px;
+    width: 90%;
+    transform-origin: bottom left;
+    transition: all 0.4s;
+}
+
+.image img {
+    object-fit: cover;
+    transform-origin: bottom left;
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.box-product h2 {
+    color: #47a262;
+    transition: all 0.4s;
+}
+
+.price {
+    margin-top: 12px;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    width: max-content;
+    transition: all 0.4s;
+
+}
+
+.all-hide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 16px;
+    gap: 10px;
+    margin-top: 120px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.box-product:hover .all-hide {
+    transform: translatey(-150px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.size p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.size {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.all-number {
+    display: flex;
+    gap: 10px;
+}
+
+.size span {
+    background-color: white;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.color {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.color p {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.all-color {
+    display: flex;
+    gap: 10px;
+}
+
+.all-color span {
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+}
+
+.all-color span:nth-child(1) {
+    background-color: #47a262;
+}
+
+.all-color span:nth-child(2) {
+    background-color: black;
+}
+
+.all-color span:nth-child(3) {
+    background-color: red;
+}
+
+.btn {
+    width: 100%;
+}
+
+.btn button {
+    background-color: #47a262;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    height: 30px;
+    width: 80px;
+}
